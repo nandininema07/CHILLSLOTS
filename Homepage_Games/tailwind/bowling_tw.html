@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowling</title>
+    <link href='https://fonts.googleapis.com/css?family=Jockey One' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Jim Nightshade' rel='stylesheet'>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dark-purple': '#120725',
+                        'light-purple': '#C1AAEE',
+                        'gold': '#F2C067',
+                    },
+                    fontFamily: {
+                        'jockey': ['"Jockey One"', 'sans-serif'],
+                        'jim': ['"Jim Nightshade"', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-dark-purple text-white">
+    <header class="fixed w-full bg-dark-purple">
+        <nav class="container mx-auto px-6 py-3">
+            <ul class="flex items-center justify-between">
+                <img src="../photos/logo.png" alt="logo" class="w-1/6">
+                <li class="hover:bg-light-purple hover:text-white rounded-lg px-3 py-2">
+                    <a href="#">Home</a>
+                </li>
+                <li class="relative group">
+                    <a href="#" class="flex items-center hover:bg-light-purple hover:text-white rounded-lg px-3 py-2">
+                        Book Now ▼
+                    </a>
+                    <ul class="absolute hidden group-hover:block bg-dark-purple shadow-lg rounded-lg mt-2">
+                        <li><a href="bowling.html" class="block px-4 py-2 hover:bg-light-purple hover:text-white">Bowling</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-light-purple hover:text-white">Arcades and Gaming Cafes</a></li>
+                        <li><a href="#" class="block px-4 py-2 hover:bg-light-purple hover:text-white">Courts and Turfs</a></li>
+                    </ul>
+                </li>
+                <li class="hover:bg-light-purple hover:text-white rounded-lg px-3 py-2">
+                    <a href="#">About</a>
+                </li>
+                <li class="hover:bg-light-purple hover:text-white rounded-lg px-3 py-2">
+                    <a href="#">Contact</a>
+                </li>
+                <div class="space-x-2">
+                    <button class="bg-light-purple hover:bg-gold text-white font-bold py-2 px-4 rounded">
+                        <a href="#">Login</a>
+                    </button>
+                    <button class="bg-light-purple hover:bg-gold text-white font-bold py-2 px-4 rounded">
+                        <a href="#">Sign Up</a>
+                    </button>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="bg-cover bg-center h-screen flex items-center justify-center" style="background-image: url('../photos/bowling\ banner.png');">
+        <div class="text-center">
+            <h1 class="font-jockey text-8xl tracking-wider text-stroke-black">BOWLING</h1>
+            <p class="font-jim text-4xl text-stroke-black">Knock 'em down, one strike at a time!</p>
+        </div>
+    </section>
+
+    <section class="py-16 -mt-32 ml-32 mr-32">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2 class="text-5xl text-center mb-10">Explore</h2>
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                <img src="../photos/bowling.jpeg" alt="Bowling 1 Image" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Game Ranch</h3>
+                    <p class="text-gray-600 mb-4">Malad West <br>Timings: 9 am to 11 pm <br>Cost (for two): ₹1000 </p>
+                    <a href="#" class="bg-light-purple hover:bg-gold text-white font-bold py-2 px-4 rounded">View</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                <img src="../photos/bowling 1.png" alt="Project 2 Image" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">HopUp</h3>
+                    <p class="text-gray-600 mb-4">Powai <br>Timings: 9 am to 11 pm <br>Cost (for two): ₹1000 </p>
+                    <a href="#" class="bg-light-purple hover:bg-gold text-white font-bold py-2 px-4 rounded">View</a>
+                </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                <img src="../photos/bowling 3.jpeg" alt="Project 2 Image" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Shott</h3>
+                    <p class="text-gray-600 mb-4">Crystal Point Mall, Andheri West <br>Timings: 9 am to 11 pm <br>Cost (for two): ₹1000 </p>
+                    <a href="#" class="bg-light-purple hover:bg-gold text-white font-bold py-2 px-4 rounded">View</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

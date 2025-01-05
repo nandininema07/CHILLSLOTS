@@ -1,0 +1,299 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jockey One', sans-serif;
+    background-color: #120725;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Header and Navbar */
+/* Header and Navbar */
+* {
+    background-color: #120725;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
+    background-color: #120725;
+}
+
+.navbar {
+    margin: auto;
+    width: 100%;
+    padding: 0.5rem 1.5rem;
+    background: #120725;
+    position: fixed;  /* Fixed position to keep navbar on top */
+    top: 0;           /* Ensure it stays at the top */
+    left: 0;
+    right: 0;
+    z-index: 1000;    /* Ensure navbar is above other content */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    position: relative;
+}
+
+.nav-link, .drop-down li {
+    list-style: none;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+}
+
+.drop-down {
+    position: absolute;
+    padding: 0.5rem 0;
+    margin: 0.5rem -0.5rem;
+    background: transparent;
+    color: #C1AAEE;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    font-size: 12px;
+    display: none;
+}
+
+.nav-link:hover {
+    background-color: #C1AAEE;
+    color: #C1AAEE;
+    border-radius: 0.5rem;
+}
+
+.services:hover .drop-down {
+    display: block;
+}
+
+.services a {
+    display: flex;
+    align-items: center;
+}
+
+.services .dropdown-icon {
+    font-size: 18px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.services:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.drop-down li:hover {
+    background: #C1AAEE;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.login_signup {
+    position: absolute;
+    right: 5px;
+}
+
+button {
+    background-color: #C1AAEE;
+    border-radius: 10px;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border: none;
+    font-size: medium;
+}
+
+button:hover {
+    background-color: #F2C067;
+    border: #C1AAEE;
+}
+
+.profile-btn{
+    position: absolute;
+    right:20px;
+    width:40px;
+    border-radius:50%;
+    background-color: #C1AAEE;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.profile-btn img{
+    border-radius:100%;
+    height:50px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border: none; 
+    font-size: medium;
+}
+
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+.banner video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire banner */
+    z-index: 0;
+}
+
+.banner h1 {
+    position: relative;
+    z-index: 1;
+    font-size: 8rem;
+    margin-bottom: 10px;
+    background-color: transparent;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Optional for text visibility */
+}
+
+.banner p {
+    position: relative;
+    z-index: 1;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: transparent;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Optional for text visibility */
+}
+
+
+
+/* Features Section */
+.features {
+    padding: 50px;
+    text-align: center;
+    background-color: #120725;
+}
+
+.features h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.features-grid :hover{
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.feature-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: #120725;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.feature-card h3 {
+    color: #333;
+    margin: 15px 0 10px;
+    background-color: transparent;
+}
+
+.feature-card p {
+    color: #333;
+    margin-top: 10px;
+    background-color: transparent;
+}
+
+
+/* Gallery Section */
+.gallery {
+    padding: 50px;
+    text-align: center;
+    background-color: #C1AAEE;
+}
+
+.gallery h2 {
+    font-size: 40px;
+    color: #120725;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+
+.gallery-grid {
+    background-color: #C1AAEE;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: transparent;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+    background: #120725;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+.footer .back-to-top {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #C1AAEE;
+    color: #120725;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer .back-to-top:hover {
+    background: #F2C067;
+}

@@ -1,0 +1,269 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+body{
+    background-color: #120725;
+    color: #fff;
+    /* position:absolute; */
+}
+
+.header{
+    background-color: #120725;
+}
+
+.navbar {
+    margin: auto;
+    width: 98%;
+    padding: 0.5rem 1.5rem;
+    background: #120725;
+    position: fixed;
+    top: 0px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    position: relative;
+    
+}
+
+.nav-link, .drop-down li {
+    list-style: none;
+    height: 100%;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+}
+
+.drop-down {
+    position: absolute;
+    padding: 0.5rem 0;
+    margin: 0.5rem -0.5rem;
+    background:#120725;
+    color: #C1AAEE;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    font-size: 12px;
+    display: none;
+}
+
+.nav-link:hover {
+    background-color: #C1AAEE;
+    color: #C1AAEE;
+    border-radius: 0.5rem;
+}
+
+.services:hover .drop-down {
+    display: block;
+}
+
+.services a {
+    display: flex;
+    align-items: center;
+}
+
+.services .dropdown-icon {
+    font-size: 18px;
+    position: relative;
+    right: -5px;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out all;
+}
+
+.services:hover .dropdown-icon {
+    transform: rotate(180deg);
+}
+
+.drop-down li:hover {
+    background: #C1AAEE;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.profile-btn{
+    position: absolute;
+    right:20px;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background-color: #C1AAEE;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+.profile-btn img{
+    border-radius:100%;
+    height:40px;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border: none; 
+    font-size: medium;
+}
+/* bookings-section */
+/* Tab Navigation Styles */
+.bookings{
+    margin-top:100px;
+    padding:0 2rem;
+}
+
+.tabs {
+    margin: 2.5rem 0;
+}
+
+.tab-button {
+    background:transparent;
+    border:#C1AAEE 2px solid;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    color: #C1AAEE;
+    margin: 0 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 10px;
+    transition: background-color ease-in-out 0.5s;
+    /* font-family: "Poppins", serif; */
+}
+
+.tab-button:hover {
+    background:#C1AAEE;
+    color:#120725;
+}
+
+.tab-button.active {
+    background:#C1AAEE;
+    color:#120725;
+}
+
+/* Tab Content Styles */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Booking Cards Layout */
+.bookings-container {
+    margin-top: 1rem;
+    color:#120725;
+}
+.bookings-header{
+    font-family: Volkhov, serif;
+    color:#fff;
+    font-size: 45px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.bookings-header span{
+    font-family: Volkhov, serif;
+    font-size: 60px;
+}
+.booking-card {
+    height:240px;
+    width:900px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    margin-bottom: 15px;
+    gap: 5px;
+}
+.booking-details{
+    width:50%;
+}
+.booking-details .fa-solid,.fa-regular{
+    font-size: 20px;
+}
+.booking-details .fa-star{
+    font-size: 16px;
+    color: #f5ad31;
+}
+
+.booking-loc{
+    width: 50%;
+    height:240px;
+    border-radius: 10px;
+}
+.up-bowling{
+    background-image: url(./images/up-bowling.jpeg);
+    background-size: cover;
+}
+.up-arcade{
+    background-image: url(./images/up-arcade.png);
+    background-size: cover;
+}
+.prev-bowling{
+    background-image: url(./images/prev-bowling.jpeg);
+    background-size: cover;
+}
+.prev-arcade{
+    background-image: url(./images/prev-arcade.png);
+    background-size: cover;
+}
+.prev-turf{
+    background-image: url(./images/prev-turf.png);
+    background-size: cover;
+}
+
+
+.booking-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.booking-card h3 {
+    font-size: 24px;
+    font-family: "Poppins", serif;
+    margin: 0 0 0.5rem 0;
+}
+
+.booking-card p {
+    font-size: 16px;
+    margin: 0.8rem 0;
+}
+.booking-details .ratings{
+    padding-top: 12px;
+    width:300px;
+    height:55px;
+    border-top: #bab6b6 1px solid;
+    position: relative;
+}
+.booking-details .ratings span{
+    margin:0;
+}
+.previous-booking-card{
+    height:260px;
+}
+.review-btn{
+    position:absolute;
+    right: 0;
+    height:35px;
+    width:90px;
+    border: #f5ad31 2px solid;
+    border-radius: 5px;
+    color:#fff;
+    background-color:#f5ad31;
+    font-family: "Poppins", serif;
+    transition: background-color ease-in-out 0.3s;
+}
+.review-btn:hover{
+    background-color: #ffff;
+    color: #f5ad31;
+}
